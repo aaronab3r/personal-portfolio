@@ -2,7 +2,9 @@
 
 Welcome to my personal portfolio website! This project showcases my skills, experience, and accomplishments in the field of software development. Built with modern web technologies, it reflects my passion for design and functionality.
 
-## I have not officially launched the website yet but I am almost done. Here in GitHub I have provided the code and will make some minor changes before publishing
+The only item excluded from this repository is the folder of images used for the project, as it contains personal photos of me.
+
+🔗 **Access the Website**: [Aaron's Personal Portfolio Website](https://dal8f64loej2l.cloudfront.net/)
 
 ## Features
 
