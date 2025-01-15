@@ -6,7 +6,7 @@ The only item excluded from this repository is the folder of images used for the
 
 🔗 **Access the Website**: [Aaron's Personal Portfolio Website](https://aberasturia.me)
 
-Website is finally live with custom domain name (aberasturia.me)
+Website is finally live with custom domain name (aberasturia.me). Free domain name from GitHub Student Developer Pack.
 
 ## Features
 
