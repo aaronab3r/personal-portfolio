@@ -88,7 +88,7 @@
 
               <br />
               Now studying at the University of Central Florida, I have gained
-              proficiency in Java and C while completing coursework in Object
+              proficiency in a variety of programming languages while also completing coursework in Object
               Oriented Software Development, Object-Oriented Programming,
               Systems Software, and more. These experiences have honed my
               technical and problem-solving skills. I am passionate about
@@ -108,7 +108,7 @@
               <ul>
                 <li>
                   <span>Programming Languages</span><br />Python, Java,
-                  JavaScript, TypeScript, C++, C, SQL, PHP, HTML, CSS, JSON, R
+                  JavaScript, TypeScript, C#, C++, C, SQL, PHP, HTML, CSS, JSON, R
                 </li>
                 <li>
                   <span>Frameworks</span><br />React, Node.js, Spring Boot,
@@ -127,6 +127,10 @@
             </div>
             <div class="tab-contents" id="projects">
               <ul>
+                <li>
+                  <span>Fish Net</span><br />Scuba Diver Exploration
+                  App
+                </li>
                 <li>
                   <span>Smart Contact Organizer</span><br />Contact Manager Web
                   Application
@@ -338,7 +342,7 @@
         "https://script.google.com/macros/s/AKfycbzbJOHCWPR-3MScOxUF9mhhTK0JXXOziifk7fFEdPL6WDSXXUglLVSv3w--RR9CYddGvw/exec";
       const form = document.forms["submit-to-google-sheet"];
       const msg = document.getElementById("msg");
-
+      
       form.addEventListener("submit", (e) => {
         e.preventDefault();
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
