@@ -2,17 +2,11 @@
 <html lang="en">
   <head>
     <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-GP3V7M3QMB"
-    ></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GP3V7M3QMB"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
+      function gtag(){ dataLayer.push(arguments); }
       gtag("js", new Date());
-
       gtag("config", "G-GP3V7M3QMB");
     </script>
 
@@ -20,156 +14,131 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Updated SEO -->
     <meta
       name="description"
-      content="Aaron Aberasturia - Computer Science Student at UCF. Passionate about software development, web design, and data-driven solutions. Explore my projects and contact me."
+      content="Aaron Aberasturia — Software Engineer and CS @ UCF (May 2026). Built a production-ready, full-stack Azure/.NET/Angular app at OneStream. Explore projects, resume, and contact."
     />
     <meta
       name="keywords"
-      content="Aaron Aberasturia, software developer, UCF, portfolio, programming, software engineer, web developer, computer science"
+      content="Aaron Aberasturia, software engineer, full-stack, C#, .NET, Angular, Azure, UCF, portfolio"
     />
     <meta name="author" content="Aaron Aberasturia" />
-    <meta
-      name="google-site-verification"
-      content="pXaCfkYX6Vp73NKY8kO2AQkGBH3Q2LUbcvRTcFfg2f0"
-    />
+    <meta name="google-site-verification" content="pXaCfkYX6Vp73NKY8kO2AQkGBH3Q2LUbcvRTcFfg2f0" />
 
-    <title>Aaron Aberasturia - Portfolio Website</title>
+    <title>Aaron Aberasturia — Software Engineer</title>
     <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/0dcd3ed8d6.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/0dcd3ed8d6.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div id="header">
       <div class="container">
-        <nav>
-          <img src="images/logo.png" class="logo" />
+        <nav aria-label="Primary">
+          <img src="images/logo.png" class="logo" alt="Aaron Aberasturia logo" />
           <ul id="sidemenu">
             <li><a href="#header">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
-            <i class="fa-solid fa-x" onclick="closemenu()"></i>
+            <i class="fa-solid fa-x" role="button" aria-label="Close menu" onclick="closemenu()"></i>
           </ul>
-          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+          <i class="fa-solid fa-bars" role="button" aria-label="Open menu" onclick="openmenu()"></i>
         </nav>
+
         <div class="header-text">
-          <p>Computer Science Student</p>
+          <p>Software Engineer · CS @ UCF · May 2026</p>
           <h1>
             Hello, I'm <span>Aaron</span><br />Aberasturia from<br />Orlando, FL
           </h1>
         </div>
       </div>
     </div>
+
     <!--------------about------------>
     <div id="about">
       <div class="container">
         <div class="row">
           <div class="about-col-1">
-            <img src="images/user.JPEG" />
+            <img src="images/user.JPEG" alt="Portrait of Aaron Aberasturia" />
           </div>
           <div class="about-col-2">
             <h1 class="sub-title">About Me</h1>
             <p>
-              I discovered my passion for programming as a high school freshman
-              through the Junior Knights program, hosted by the UCF Department
-              of Computer Science, where I learned Python and competitive
-              programming. This experience inspired me to explore computer
-              science further by taking high school electives, building
-              platformer games in Scratch, and learning JavaScript. Alongside
-              academics, I launched a reselling business that generated over
-              half a million dollars in revenue by utilizing APIs, proxies, and
-              custom checkout bots, deepening my interest in technology and
-              solidifying my decision to pursue a Computer Science degree.
-              <br />
-
-              <br />
-              Now studying at the University of Central Florida, I have gained
-              proficiency in a variety of programming languages while also completing coursework in Object
-              Oriented Software Development, Object-Oriented Programming,
-              Systems Software, and more. These experiences have honed my
-              technical and problem-solving skills. I am passionate about
-              developing innovative solutions to real-world challenges through
-              technology and am dedicated to applying my skills to impactful
-              software engineering and development projects.
+              I’m a Software Engineer and Computer Science student at the University of Central Florida (May 2026).
+              This summer, I shipped a production-ready, full-stack application at OneStream Software on the Marketplace team,
+              working across C#, .NET, EF Core, ASP.NET Core Minimal APIs, Angular, TypeScript, and Microsoft Azure.
+              I love building reliable, data-driven systems and intuitive UIs that deliver measurable value.
             </p>
 
             <div class="tab-titles">
-              <p class="tab-links active-link" onclick="opentab('skills')">
-                Skills
-              </p>
-              <p class="tab-links" onclick="opentab('projects')">Projects</p>
-              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+              <p class="tab-links" onclick="opentab('projects', event)">Projects</p>
+              <p class="tab-links" onclick="opentab('education', event)">Education</p>
             </div>
+
             <div class="tab-contents active-tab" id="skills">
               <ul>
                 <li>
-                  <span>Programming Languages</span><br />Python, Java,
-                  JavaScript, TypeScript, C#, C++, C, SQL, PHP, HTML, CSS, JSON, R
+                  <span>Programming Languages</span><br />
+                  Python, Java, JavaScript, TypeScript, C#, C++, C, SQL, PHP, HTML, CSS, JSON
                 </li>
                 <li>
-                  <span>Frameworks</span><br />React, Node.js, Spring Boot,
-                  Angular, Next.js, Django, TensorFlow
+                  <span>Frameworks & Libraries</span><br />
+                  React, Node.js, Angular, Next.js, Spring Boot, Django, TensorFlow, EF Core, ASP.NET Core Minimal APIs
                 </li>
                 <li>
-                  <span>Tools</span><br />Git, GitHub, RESTful APIs, AWS, MySQL,
-                  NoSQL, MongoDB, Google Cloud, Postman, Swagger, GraphQL,
-                  Linux, Shell Scripts, Windows, macOS, Microsoft Azure, Pandas,
-                  NumPy, Matplotlib, Vim
+                  <span>Cloud & Tools</span><br />
+                  Microsoft Azure, AWS, Google Cloud, RESTful APIs, Swagger, MySQL, MongoDB, GraphQL, Postman,
+                  Linux, Shell Scripts, Git, GitHub, Pandas, NumPy, Matplotlib
                 </li>
-                <a href="images/Aaron_Aberasturia_Resume.pdf" class="btn"
-                  >Download Resume</a
-                >
+                <li>
+                  <span>Methodologies</span><br />
+                  Agile, Scrum, ETL, UI/UX
+                </li>
               </ul>
+              <a href="images/Aaron_Aberasturia_Resume.pdf" class="btn" target="_blank" rel="noopener">Download Resume</a>
             </div>
+
             <div class="tab-contents" id="projects">
               <ul>
                 <li>
-                  <span>Fish Net</span><br />Scuba Diver Exploration
-                  App
+                  <span>Marketplace Metrics (OneStream)</span><br />
+                  Full-stack Azure/.NET/Angular app for development analytics (Jira + Azure DevOps), production deployed.
                 </li>
                 <li>
-                  <span>Smart Contact Organizer</span><br />Contact Manager Web
-                  Application
+                  <span>Scuba Diver Exploration App</span><br />
+                  React + TypeScript frontend; MERN APIs; map pins with image, time, and location metadata.
                 </li>
                 <li>
-                  <span>Rent-A-Ride Platform</span><br />Car Rental Web
-                  Application
+                  <span>Smart Contact Organizer</span><br />
+                  LAMP stack app with auth and REST APIs for secure contact management.
                 </li>
                 <li>
-                  <span>Forecasting the Stock Market's Future</span><br />Stock
-                  Price Prediction Web Application
+                  <span>Stock Forecasting</span><br />
+                  Python + Streamlit + TensorFlow (LSTM) with interactive charts.
                 </li>
                 <li>
-                  <span>Automated Music Engagement Tool</span><br />SoundCloud
-                  Music View Automation Tool
+                  <span>SoundCloud Automation Tool</span><br />
+                  Java desktop automation with multithreading and UI controls.
                 </li>
-                <li>
-                  <span>Interactive Personal Portfolio</span><br />Personal
-                  Portfolio Website
-                </li>
-                <a href="images/Aaron_Aberasturia_Resume.pdf" class="btn"
-                  >Download Resume</a
-                >
               </ul>
+              <a href="images/Aaron_Aberasturia_Resume.pdf" class="btn" target="_blank" rel="noopener">Download Resume</a>
             </div>
+
             <div class="tab-contents" id="education">
               <ul>
                 <li>
-                  <span>University of Central Florida</span><br />B.S Computer
-                  Science<br />Expected Graduation: Spring 2026
+                  <span>University of Central Florida</span><br />
+                  B.S. Computer Science — Expected May 2026<br />
+                  Related Coursework: Data Structures & Algorithms, Object-Oriented Programming, Operating Systems, Senior Design, Machine Learning, Artificial Intelligence, Discrete Mathematics
                 </li>
                 <li>
-                  <span>University High School</span><br />International
-                  Baccalaureate Graduate<br />2018-2022
+                  <span>University High School</span><br />
+                  International Baccalaureate Graduate (2018–2022)
                 </li>
-                <a href="images/Aaron_Aberasturia_Resume.pdf" class="btn"
-                  >Download Resume</a
-                >
               </ul>
+              <a href="images/Aaron_Aberasturia_Resume.pdf" class="btn" target="_blank" rel="noopener">Download Resume</a>
             </div>
           </div>
         </div>
@@ -179,34 +148,30 @@
     <!-------------------services-------------->
     <div id="services">
       <div class="container">
-        <h1 class="sub-title">My Services</h1>
+        <h1 class="sub-title">What I Do</h1>
         <div class="services-list">
           <div>
-            <i class="fa-solid fa-code"></i>
-            <h2>Software Development</h2>
+            <i class="fa-solid fa-code" aria-hidden="true"></i>
+            <h2>Full-Stack Development</h2>
             <p>
-              I develop reliable and efficient software solutions tailored to
-              meet unique needs. I'm Proficient in multiple programming
-              languages and my work emphasizes functionality, performance, and
-              user satisfaction.
+              Build scalable web apps with .NET/C#/EF Core and Angular/TypeScript.
+              Focus on clean APIs, secure data flows, and maintainable architectures.
             </p>
           </div>
           <div>
-            <i class="fa-solid fa-laptop-code"></i>
-            <h2>Web Design and Development</h2>
+            <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+            <h2>Frontend Engineering</h2>
             <p>
-              I design and create responsive, visually appealing websites that
-              offer seamless user experiences. My focus is on delivering
-              intuitive navigation and modern design aesthetics.
+              Craft accessible, responsive UIs with modern patterns and Angular Material,
+              optimizing performance and usability across devices.
             </p>
           </div>
           <div>
-            <i class="fa-solid fa-database"></i>
-            <h2>Data-Driven Solutions</h2>
+            <i class="fa-solid fa-database" aria-hidden="true"></i>
+            <h2>Data & Cloud</h2>
             <p>
-              I create intelligent solutions to turn data into actionable
-              insights. My projects prioritize accuracy, scalability, and
-              user-focused interfaces.
+              Design ETL pipelines, integrate SQL/NoSQL, and deploy to Azure/AWS.
+              Use telemetry and dashboards to turn metrics into decisions.
             </p>
           </div>
         </div>
@@ -219,54 +184,40 @@
         <h1 class="sub-title">My Work</h1>
         <div class="work-list">
           <div class="work">
-            <img src="images/work-1.jpeg" />
+            <img src="images/work-1.jpeg" alt="Stock prediction app screenshot" />
             <div class="layer">
-              <h3>Stock Price Prediction Web Application</h3>
+              <h3>Stock Price Prediction</h3>
               <p>
-                The Stock Price Prediction Web Application forecasts future
-                stock prices using historical trends, real-time data retrieval,
-                interactive inputs, and visualizations to provide accurate and
-                user-friendly insights.
+                LSTM forecasting with Streamlit, interactive inputs, and charts.
               </p>
-              <a href=" https://aaronab3r-stock-predictor.streamlit.app/"
-                ><i class="fa-solid fa-up-right-from-square"></i
+              <a href="https://aaronab3r-stock-predictor.streamlit.app/" target="_blank" rel="noopener"
+                ><i class="fa-solid fa-up-right-from-square" aria-hidden="true"></i
               ></a>
             </div>
           </div>
           <div class="work">
-            <img src="images/work-2.png" />
+            <img src="images/work-2.png" alt="SoundCloud automation tool UI" />
             <div class="layer">
-              <h3>SoundCloud Music View Automation Tool</h3>
+              <h3>SoundCloud Automation Tool</h3>
               <p>
-                Developed a tool to automate browser interactions for increasing
-                SoundCloud song play counts, featuring customizable options to
-                enhance user experience and efficiency.
+                Java automation with multithreading and customizable refresh logic.
               </p>
-              <a href="https://github.com/aaronab3r/SoundCloudViewBot"
-                ><i class="fa-solid fa-up-right-from-square"></i
+              <a href="https://github.com/aaronab3r/SoundCloudViewBot" target="_blank" rel="noopener"
+                ><i class="fa-solid fa-up-right-from-square" aria-hidden="true"></i
               ></a>
             </div>
           </div>
           <div class="work">
-            <img src="images/work-3.png" />
+            <img src="images/work-3.png" alt="Portfolio website preview" />
             <div class="layer">
-              <h3>Personal Portfolio Website</h3>
+              <h3>Personal Portfolio</h3>
               <p>
-                This personal portfolio website is a showcase of my skills,
-                projects, and accomplishments, designed to provide a clear
-                insight into my expertise and experiences. Built using modern
-                web technologies, it reflects my commitment to creating
-                user-friendly and visually appealing designs—just like the one
-                you’re exploring right now!
+                Modern, responsive site showcasing projects, resume, and contact.
               </p>
             </div>
           </div>
         </div>
-        <a href="https://github.com/aaronab3r" class="btn"
-          >Explore More on GitHub</a
-        >
-        <!--<a href="#" class="btn">See more</a>-->
-        <!--<a href="images/Aaron Aberasturia RESUME.pdf" download class="btn btn2">Download Resume</a>-->
+        <a href="https://github.com/aaronab3r" class="btn" target="_blank" rel="noopener">Explore More on GitHub</a>
       </div>
     </div>
 
@@ -276,81 +227,62 @@
         <div class="row">
           <div class="contact-left">
             <h1 class="sub-title">Contact Me</h1>
-            <p><i class="fa-solid fa-envelope"></i> aaronaber3@gmail.com</p>
-            <p><i class="fa-solid fa-square-phone"></i> (321) 297-2160</p>
+            <p><i class="fa-solid fa-envelope" aria-hidden="true"></i> aaronaber3@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone" aria-hidden="true"></i> (321) 297-2160</p>
             <div class="social-icons">
-              <a href="https://www.linkedin.com/in/aaron-aberasturia/"
+              <a href="https://www.linkedin.com/in/aaron-aberasturia/" target="_blank" rel="noopener" aria-label="LinkedIn"
                 ><i class="fa-brands fa-linkedin"></i
               ></a>
-              <a href="https://github.com/aaronab3r"
+              <a href="https://github.com/aaronab3r" target="_blank" rel="noopener" aria-label="GitHub"
                 ><i class="fa-brands fa-github"></i
               ></a>
             </div>
           </div>
-          <div class="contact-right"></div>
-          <form name="submit-to-google-sheet">
-            <input type="text" name="Name" placeholder="Your Name" required />
-            <input
-              type="email"
-              name="Email"
-              placeholder="Your Email"
-              required
-            />
-            <textarea
-              name="Message"
-              rows="6"
-              placeholder="Your Message"
-            ></textarea>
-            <button type="submit" class="btn btn2">Submit</button>
-          </form>
-          <span id="msg"></span>
+
+          <div class="contact-right">
+            <form name="submit-to-google-sheet" aria-label="Contact form">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input type="email" name="Email" placeholder="Your Email" required />
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg" role="status" aria-live="polite"></span>
+          </div>
         </div>
       </div>
       <div class="copyright">
-        <p><i class="fa-solid fa-computer"></i> Created by Aaron Aberasturia</p>
+        <p><i class="fa-solid fa-computer" aria-hidden="true"></i> Created by Aaron Aberasturia</p>
       </div>
     </div>
 
     <script>
-      var tablinks = document.getElementsByClassName("tab-links");
-      var tabcontents = document.getElementsByClassName("tab-contents");
-
-      function opentab(tabname) {
-        for (tablink of tablinks) {
-          tablink.classList.remove("active-link");
-        }
-        for (tabcontent of tabcontents) {
-          tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
+      const tablinks = document.getElementsByClassName("tab-links");
+      const tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname, ev){
+        ev = ev || window.event;
+        for (const tablink of tablinks) tablink.classList.remove("active-link");
+        for (const tabcontent of tabcontents) tabcontent.classList.remove("active-tab");
+        ev.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
       }
     </script>
 
     <script>
-      var sidemenu = document.getElementById("sidemenu");
-
-      function openmenu() {
-        sidemenu.style.right = "0";
-      }
-      function closemenu() {
-        sidemenu.style.right = "-200px";
-      }
+      const sidemenu = document.getElementById("sidemenu");
+      function openmenu(){ sidemenu.style.right = "0"; }
+      function closemenu(){ sidemenu.style.right = "-200px"; }
     </script>
+
     <script>
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycbzbJOHCWPR-3MScOxUF9mhhTK0JXXOziifk7fFEdPL6WDSXXUglLVSv3w--RR9CYddGvw/exec";
+      const scriptURL = "https://script.google.com/macros/s/AKfycbzbJOHCWPR-3MScOxUF9mhhTK0JXXOziifk7fFEdPL6WDSXXUglLVSv3w--RR9CYddGvw/exec";
       const form = document.forms["submit-to-google-sheet"];
       const msg = document.getElementById("msg");
-      
       form.addEventListener("submit", (e) => {
         e.preventDefault();
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => {
-            msg.innerHTML = "Message sent successfully";
-            setTimeout(function () {
-              msg.innerHTML = "";
-            }, 5000);
+          .then(() => {
+            msg.textContent = "Message sent successfully";
+            setTimeout(() => { msg.textContent = ""; }, 5000);
             form.reset();
           })
           .catch((error) => console.error("Error!", error.message));
